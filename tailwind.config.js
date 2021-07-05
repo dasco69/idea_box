@@ -5,6 +5,9 @@ module.exports = {
     fontFamily: {
       'concert-one': ["'Concert One'", "cursive"]
      },
+     height: {
+       body: '80vh'
+     },
     extend: {},
   },
   variants: {
