@@ -1,3 +1,10 @@
+
+
+/*change when you click on ancre navbar*/
+body {
+  background-color: #f87172;
+}
+
 .fade-enter,
 .fade-leave-to { opacity: 0; }
 .fade-enter-active,
@@ -23,7 +30,7 @@
 .rotate-leave-active { transition: 0.5s; }
 .rotate-leave-to { transform: perspective(500px) rotate3d(0, 1, 0, -90deg); }
 
-.color-enter { transform: matrix(2, 5, 5, 2, 5, 6); background-color: red; }
+.color-enter { transform: matrix(2, 5, 5, 2, 5, 6);}
 .color-enter-active,
 .color-leave-active { transition: 0.5s; }
 .color-leave-to { transform: perspective(500px) rotate3d(0, 1, 0, -90deg); }

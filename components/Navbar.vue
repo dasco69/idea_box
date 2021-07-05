@@ -1,9 +1,10 @@
 <template>
-    <div>
-        <ul class="inline-flex m-8">
+    <div class="inline-flex">
+        <ALogo :src="require('~/assets/idea_box.png')" />
+        <ul class="inline-flex items-center m-8">
             <li class="ml-6" v-for="item in items" :key="item.id">
                  <div class="flex flex-col items-center">
-                     <NuxtLink @click.native='detechItems' class="flex flex-col items-center" :to="item.path">{{ item.title }}</NuxtLink>
+                     <NuxtLink @click.native='detechItems' class="flex flex-col items-center text-white font-concert-one text-xl" :to="item.path">{{ item.title }}</NuxtLink>
                  </div>
             </li>
         </ul>
@@ -11,7 +12,9 @@
 </template>
 
 <script>
+import ALogo from './atoms/img/ALogo.vue'
     export default {
+  components: { ALogo },
         name: 'Navbar',
         data() {
             return {
@@ -39,29 +42,27 @@
             detechItems(element) {
                 const path = element.target.href.split('/')[3]
                 const pathRoute = this.$route.path.split('/')[1]
+                const ancreActive = document.querySelectorAll('.nuxt-link-exact-active .nuxt-link-active')
                 document.body.className = ''
-
                 switch (path) {
                     case 'home':
-                        console.log('home')
                         document.body.classList.add('bg-red-400')
-                        break;
+                        break
                     case 'devola':
-                        console.log('devola')
                         document.body.classList.add('bg-yellow-200')
+                        //element.target.style.color = "red"
+                        console.log(ancreActive)
                         break
                     case 'goodjob':
-                        console.log('goodjob')
                         document.body.classList.add('bg-blue-400')
                         break
                     case 'leads':
-                        console.log('leads')
                         document.body.classList.add('bg-green-400')
                         break
                     
                     default:
-
-                        break;
+                        document.body.classList.add('bg-red-400')
+                        break
                 }
             }
         },
