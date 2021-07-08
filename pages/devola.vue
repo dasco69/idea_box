@@ -1,6 +1,6 @@
 <template>
-    <div class="grid grid-flow-col grid-cols-2 h-body  flex items-center">
-        <div>
+    <div class="grid grid-flow-col grid-cols-2 h-body  flex items-center md:grid-cols-1 md:grid-rows-2">
+        <div class="md:flex md:justify-center">
             <ACardBasic>
                 <template v-slot:title>
                     <ATitle title="Ton Idées" classCss="text-blue-300"/>
@@ -13,7 +13,7 @@
                 </template>
             </ACardBasic>
         </div>
-        <div>
+        <div class="md:hidden">
             <ACardIdea>
                 <template v-slot:title>
                     <ATitle title="Les idées proposés" classCss="text-blue-300"/>

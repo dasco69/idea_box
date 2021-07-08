@@ -1,9 +1,7 @@
 <template>
   <div class="container mx-auto">
     <Navbar />
-    <transition name="color" mode="out-in">
-      <Nuxt />
-    </transition>
+    <Nuxt />
   </div>
 </template>
 <style>

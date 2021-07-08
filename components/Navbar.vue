@@ -1,6 +1,6 @@
 <template>
-    <div class="inline-flex">
-        <ALogo :src="require('~/assets/idea_box.png')" />
+    <div class="inline-flex w-full md:fixed md:bottom-0 md:left-0 md:justify-center ">
+        <ALogo :src="require('~/assets/idea_box.png')" class="md:hidden"/>
         <ul class="inline-flex items-center m-8">
             <li class="ml-6" v-for="item in items" :key="item.id">
                  <div class="flex flex-col items-center">
