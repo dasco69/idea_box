@@ -1,6 +1,6 @@
 <template>
     <div class="inline-flex grid grid-flow-col grid-cols-2 md:grid-cols-1 md:grid-rows-2 md:items-center">
-        <div class="h-full flex items-start justify-evenly flex-col md:items-center">
+        <div class="h-full flex items-center justify-evenly flex-col md:items-center">
             <h1 class="text-white font-concert-one font-light text-9xl mt-20 md:text-center">
                 Déposer <br/>
                 vos idées
@@ -18,7 +18,7 @@
 
 <script>
     export default {
-        name: 'home',
+        name: '',
         layout: 'default',
     }
 </script>

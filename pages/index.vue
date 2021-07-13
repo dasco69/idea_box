@@ -1,18 +1,15 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+    <div>
+        <Nuxt/>
+    </div>
 </template>
 
 <script>
-export default {
-  methods: {
-    color() {
-      console.log('test')
+    export default {
+        
     }
-  },
-  mounted () {
-    this.color();
-  },
-}
 </script>
+
+<style scoped>
+
+</style>

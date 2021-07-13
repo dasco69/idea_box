@@ -44,6 +44,7 @@ import ALogo from './atoms/img/ALogo.vue'
                 const pathRoute = this.$route.path.split('/')[1]
                 const ancreActive = document.querySelectorAll('.nuxt-link-exact-active .nuxt-link-active')
                 document.body.className = ''
+                console.log(path)
                 switch (path) {
                     case 'home':
                         document.body.classList.add('bg-red-400')
